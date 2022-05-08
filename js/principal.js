@@ -1,29 +1,35 @@
-let paciente = document.querySelector('#primeiro-paciente');
-let tdPeso = paciente.querySelector('.info-peso');
-let tdAltura = paciente.querySelector('.info-altura');
+let pacientes = document.querySelectorAll('.paciente');
 
-let peso = tdPeso.textContent;
-let altura = tdAltura.textContent;
 
-let tdImc = document.querySelector('.info-imc');
+for (let i = 0; i < pacientes.length; i++) {
+    
+    let paciente = pacientes[i];
 
-let pesoEhValido = true;
-let alturaEhValida = true;
+    let tdPeso = paciente.querySelector('.info-peso');
+    let peso = tdPeso.textContent;
 
-if ((peso <= 0) || (peso >= 1000)) {
-    console.log('Peso inválido!');
-    pesoEhValido = false;
-    tdImc.textContent = 'Peso inválido';
-} 
+    let tdAltura = paciente.querySelector('.info-altura');
+    let altura = tdAltura.textContent;
+    
+    let tdImc = paciente.querySelector('.info-imc');
+    
+    let pesoEhValido = true;
+    let alturaEhValida = true;
 
-if ((altura <= 0) || (altura >= 3.00)) {
-    console.log('Altura inválida!');
-    alturaEhValida = false;
-    tdImc.textContent = 'Altura inválida';
+    if ((peso <= 0) || (peso >= 1000)) {
+        console.log('Peso inválido!');
+        pesoEhValido = false;
+        tdImc.textContent = 'Peso inválido';
+    } 
+    
+    if ((altura <= 0) || (altura >= 3.00)) {
+        console.log('Altura inválida!');
+        alturaEhValida = false;
+        tdImc.textContent = 'Altura inválida';
+    }
+    
+    if (pesoEhValido && alturaEhValida) {
+        let imc = peso / (altura * altura);
+        tdImc.textContent = imc.toFixed(2);
+    }
 }
-
-if (pesoEhValido && alturaEhValida) {
-    let imc = peso / (altura * altura);
-    tdImc.textContent = imc;
-}
-
