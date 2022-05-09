@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Atividade */
+.styled-table {
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 0.9em;
+    margin: 0 auto;
+    margin-top: 20px;
+    min-width: 500px;
+    table-layout: fixed;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #FFF;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #DDD;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #F3F3F3;
+}
+
+/* Atividade 02 */
+.lista-produtos {
+    display: inline-block;
+    margin: 20px;
+    width: 40%;
+}
+
+.titulo-principal {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.produto::before {
+    content: '✦';
+}
+
+.produto {
+    line-height: 1.5;
+}
+
+/* Atividade 03 */
+.titulos {
+    margin: 15px 0 0 20px;
+}
+
+.titulo {
+    color: #009879;
+    font-size: 0.8em;
+    font-style: italic;
+}
