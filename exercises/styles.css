@@ -82,15 +82,28 @@ body {
     padding: 2px;
 }
 
-.botao {
+.botao, #botao-adicionar {
     background-color: #34AEEB;
     border: 1px solid #34AEEB;
     color: #FFF;
     padding: 3px 5px;
 }
 
-.botao:hover {
+.botao:hover, #botao-adicionar:hover {
     background-color: #FFF;
     border: 1px solid #34AEEB;
     color: #34AEEB;
+}
+
+/* Atividade 06 */
+.lista::before {
+    content: '✧';
+}
+
+.afazeres {
+    margin: 10px 20px 10px;
+}
+
+.adicionar-tarefa {
+    margin: 10px 20px;
 }
