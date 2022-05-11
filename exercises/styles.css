@@ -62,3 +62,35 @@ body {
     font-size: 0.8em;
     font-style: italic;
 }
+
+/* Atividade 04 */
+#botao {
+    background-color: #009879;
+    border: 1px solid #009879;
+    color: #FFF;
+    padding: 6px 8px;
+}
+
+#botao:hover {
+    background-color: #FFF;
+    border: 1px solid #009879;
+    color: #009879;
+}
+
+/* Atividade 05 */
+.frase {
+    padding: 2px;
+}
+
+.botao {
+    background-color: #34AEEB;
+    border: 1px solid #34AEEB;
+    color: #FFF;
+    padding: 3px 5px;
+}
+
+.botao:hover {
+    background-color: #FFF;
+    border: 1px solid #34AEEB;
+    color: #34AEEB;
+}
