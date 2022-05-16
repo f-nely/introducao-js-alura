@@ -152,3 +152,7 @@ button[disabled=disabled], button:disabled {
 	margin-bottom: 10px;
 	width: 200px;
 }
+
+.invisivel {
+	display: none;
+}
