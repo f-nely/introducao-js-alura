@@ -19,19 +19,22 @@ botaoAdicionar.addEventListener('click', function (event) {
         return;
     }
 
-    // cria a tr a td do paciente
-    let pacienteTr = montaTr(paciente);
-
-    // adicionando o paciente na tabela
-    let tabela = document.querySelector('#tabela-pacientes');
-    tabela.appendChild(pacienteTr);
-
+    adicionaPacienteTabela(paciente);
+    
     // limpando formulário
     form.reset();
     let mensagemErro = document.querySelector('#mensagens-erro');
     mensagemErro.innerHTML = '';
 
 });
+
+function adicionaPacienteTabela(paciente) {
+    // cria a tr a td do paciente
+    let pacienteTr = montaTr(paciente);
+    // adicionando o paciente na tabela
+    let tabela = document.querySelector('#tabela-pacientes');
+    tabela.appendChild(pacienteTr);
+}
 
 function exibeMensagensErrro(erros) {
     let ul = document.querySelector('#mensagens-erro');
